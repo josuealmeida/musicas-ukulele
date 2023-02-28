@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"sass": "sass assets/scss:assets/css -s compressed"
+	}
+}

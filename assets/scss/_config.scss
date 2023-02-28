@@ -1,0 +1,33 @@
+// Imports
+@import 'https://unpkg.com/ress/dist/ress.min.css';
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap';
+
+// Variables
+$color-primary: #24B1BA;
+$color-dark: #212929;
+$color-light: #DBEAEB;
+
+// Global
+html{
+	font-family: 'IBM Plex Sans', sans-serif;
+	line-height: 1.25;
+	color: $color-dark;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+// Functions
+// convert px to rem
+@function rem($pixel){
+  @return calc($pixel / 16) * 1rem;
+}
+
+// Utilities
+// container
+.container{
+	max-width: 1215px;
+	margin: 0 auto;
+}
